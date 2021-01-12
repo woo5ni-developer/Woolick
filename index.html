@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">CAROUSEL</h1>
+  <div class="wrap">
+    <div class="carousel-wrap">
+      <div class="carousel">
+        <div class="slide" id="b1">SLIDE-1</div>
+        <div class="slide" id="b2">SLIDE-2</div>  
+        <div class="slide" id="b3">SLIDE-3</div>
+        <div class="slide" id="b4">SLIDE-4</div>  
+        <div class="slide" id="b5">SLIDE-5</div>
+      </div>
+      <button type="button" id="prev">PREV</button>
+      <button type="button" id="next">NEXT</button>
+    </div>
+  </div>
+    
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="woolick.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.carousel').woolick();
+    })
+  </script>
+
+</body>
+</html>
